@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mondelio.com/sitemap.xml
