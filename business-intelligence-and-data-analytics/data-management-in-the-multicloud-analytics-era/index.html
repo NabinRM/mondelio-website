@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <title>Data Management in the MultiCloud Analytics Era - Mondelio</title>
+    <meta name="og:title" content="Data Management in the MultiCloud Analytics Era - Mondelio" />
+    
+    
+    
+    <meta name="description" content="Data Management in the MultiCloud Analytics Era" />
+    <meta name="og:description" content="Data Management in the MultiCloud Analytics Era" />
+    
+    <meta name="author" content="Nabin Rayamajhi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="mondelio.com" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146660811-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-146660811-1');
+    </script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5590659.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+    <!-- Start of Mailchimp Embed Code -->
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/13c1911f81df4693cee678f51/cac40eb6d40dd560a901cb823.js");</script>
+    <!-- Start of Mailchimp Embed Code -->
+
+    <link href="https:&#x2F;&#x2F;mondelio.com&#x2F;css&#x2F;site.css?h=994a46bf8a909632c700bbb4982a96f6795c798012e9a3acd9698d010824ab7e" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css">
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet" type="text/css"> -->
+
+</head>
+
+<body>
+    <div class="promo_social">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="tel:+61299294799">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@mondelio.com">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/mondelio-worldwide-pty-ltd/" target="_blank"
+                        rel="noopener">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/mondelio" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/MondelioAU" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="https:&#x2F;&#x2F;mondelio.com" />
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand logo" href="https:&#x2F;&#x2F;mondelio.com" />
+                    <img src="https:&#x2F;&#x2F;mondelio.com&#x2F;images&#x2F;logo.png?h=7b18e1187b8c7508975894f5e00a0c7920d59ca34d2087b4352c5c12fe04bcdd" alt="Mondelio Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-inline-flex flex-sm-row-reverse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav flex-grow-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https:&#x2F;&#x2F;mondelio.com&#x2F;products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https:&#x2F;&#x2F;mondelio.com&#x2F;services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="https:&#x2F;&#x2F;mondelio.com" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item"
+                                        href="https:&#x2F;&#x2F;mondelio.com&#x2F;business-intelligence-and-data-analytics">BI &
+                                        Analytics</a>
+                                    <a class="dropdown-item" href="https:&#x2F;&#x2F;mondelio.com&#x2F;data-accuracy">Data Accuracy</a>
+                                    <a class="dropdown-item" href="https:&#x2F;&#x2F;mondelio.com&#x2F;case-studies">Case
+                                        Studies</a>
+                                    <a class="dropdown-item"
+                                        href="https:&#x2F;&#x2F;mondelio.com&#x2F;whitepapers">Whitepapers</a>
+                                    <a class="dropdown-item" href="https:&#x2F;&#x2F;mondelio.com&#x2F;webinars">Webinars</a>
+                                    <a class="dropdown-item" href="https:&#x2F;&#x2F;mondelio.com&#x2F;blog">Blog</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="https:&#x2F;&#x2F;mondelio.com&#x2F;about" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="https:&#x2F;&#x2F;mondelio.com&#x2F;about">About Mondelio</a>
+                                    <a class="dropdown-item" href="https:&#x2F;&#x2F;mondelio.com&#x2F;partners">Our Partners</a>
+                                    <a class="dropdown-item" href="https:&#x2F;&#x2F;mondelio.com&#x2F;news">News & Events</a>
+                                    <a class="dropdown-item" href="https://info.mondelio.com/book-a-demo">Book a
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https:&#x2F;&#x2F;mondelio.com&#x2F;contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    
+
+<section class="services section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mb-4 row_text left">
+        
+        <h1>Data Management in the MultiCloud Analytics Era</h1>
+        <!-- <b align="right">Published : 01&#x2F;12&#x2F;2020</b> -->
+        
+        
+        <img class="img-fluid float-left my-3" src="https:&#x2F;&#x2F;mondelio.com&#x2F;processed_images&#x2F;4b9477c463b559c200.jpg" alt="Data Management in the MultiCloud Analytics Era"/>
+        
+        
+        <p><h3 id="what-comes-after-big-data">What comes after big data?</h3>
+<p>Over the last decade, data has done more than explode, it’s completely changed the way companies operate. When technology made it not only affordable, but advantageous to store a wide variety of information, Big Data took the business world by storm. Once all of that data was wrangled and stored, organizations of all sizes collectively came to terms with a new challenge: creating value with all of that information. The truth is that the ambition to collect data had far outpaced business’s abilities to analyze it. Organizations across all industries had an extremely wide range of data inputs and an equally distributed approach to storing all that data. </p>
+<span id="continue-reading"></span>
+<p>Coinciding with the sharp increase in data collection was another trend: cloud storage. </p>
+<p>Organizations today use a mixture of on-prem, public cloud, and private cloud environments to manage their data. Depending on their unique data needs, teams are faced with the challenge of incorporating all of those technologies together into a data pipeline that can be used to answer more and more complex business questions. This type of setup, merging different cloud technologies together into a single workflow is called a multicloud architecture.</p>
+<h3 id="solving-the-traditional-reliability-agility-tradeoff">Solving the traditional reliability/agility tradeoff</h3>
+<p>Traditionally, data infrastructure has been designed to deliver either reliability or agility. Being able to move quickly with data meant sacrificing uptime. Having a stable data environment limited a team’s ability to respond to change. Before multicloud infrastructures, data stacks existed somewhere on a spectrum with reliability at one end and agility at the other. Movement toward one end was also an equal move away from the other.</p>
+<p>With the introduction of cloud-native strategies, that linear spectrum has turned into a quadrant, with the possibility of a position that optimizes both reliability and agility. Organizations that effectively structure multicloud environments benefit from both excellent performance and the ability to innovate quickly to adapt to changing market or customer demands.</p>
+<p>The introduction of cloud-native techniques has brought on a development process that operates more like the traditional DevOps process used in software engineering functions. Cloud-based microservices in containers give teams flexibility that had never been possible before. There’s an easy-to-see future where data teams take advantage of this structure to deliver advanced data insights to stakeholders in real time. This ideal multicloud structure offers data teams a lot of attractive benefits: faster time to turn data into value, optimized costs, increased business agility, productivity optimizations, and a more robust end-user experience.</p>
+<h3 id="multicloud-vs-cloud-agnostic">“Multicloud” vs. “cloud agnostic”</h3>
+<p>When it comes to generating value from different cloud providers, “multicloud” is a bit of a misnomer. It’s unrealistic to try to design a cloud environment that uses a little bit of each of the three big cloud providers, combining specific parts of each to build the most complete full stack. The costs of transferring data from one cloud to another make that structure unattractive. </p>
+<p>Instead, the most innovative modern organizations are building stacks that can operate smoothly in any of the big cloud providers. A cloud-agnostic stack runs efficiently on any of the three big cloud vendors, but can easily be moved together as a unit to any of the other vendors if that shift becomes advantageous for the business. When we talk about the benefits of a “multicloud” stack, what we really mean is a stack that can run holistically on multiple cloud vendors and incorporate on-prem elements, not one that runs on multiple clouds at the same time. </p>
+<p>In short, “multicloud” is about portability. The value of the multicloud architecture is not generated from a wide stack that spans different cloud vendors, it’s from a vertical stack that can move laterally to any single cloud vendor whenever the CIO determines that move to be advantageous. </p>
+<h3 id="complications-of-a-multicloud-environment">Complications of a multicloud environment</h3>
+<p>A multicloud architecture offers a lot of advantages when it is executed well, but it’s not as easy as simply flipping a switch. The reliable and agile system described in the previous section is a desirable end state, but one that has several obstacles along the way, especially for companies with data infrastructures that predate cloud technology. Here are a few of the biggest blockers for modern companies that want to adopt a multicloud strategy:</p>
+<ul>
+<li><strong>Complexity/latency:</strong> Data comes from a lot of different sources and lives in a lot of different places, including different cloud environments. Moving all that data from place to place requires additional work from the data team and can introduce room for error with data dependencies or latency.</li>
+<li><strong>Existing data infrastructure:</strong> A stack of data tools that are entirely cloud-native is great, but most organizations began building their stacks long before cloud technology was possible. Because of the connectivity required of each part of a stack, combining tools with varying levels of cloud accessibility is not always easy or even possible.</li>
+<li><strong>Compliance:</strong> With new technology often comes new regulations to ensure that data is both protected and used appropriately. When new compliance measures are passed, companies have to invest a lot of resources in meeting those requirements.</li>
+<li><strong>Security:</strong> Adding new cloud technology can also be an easy way to introduce new threats to the security of your data. Organizations need to make sure that they have sufficient security practices in place before building a multicloud stack. </li>
+<li><strong>Cost:</strong> Adopting new technologies, even if they are improvements, often means purchasing new tools and laying the groundwork for them to work together. While the end result can offer significant cost reductions, the expenses of the upfront structural work can still be prohibitive for some companies.</li>
+</ul>
+<h3 id="the-current-cloud-landscape">The current cloud landscape</h3>
+<p>Today’s cloud landscape has three major players: Amazon Web Services, Microsoft Azure, and Google Cloud Platform. From a cost perspective, it’s relatively affordable to transfer data inside a single cloud provider and relatively expensive to transfer data from one cloud to another. Those three platforms do a great job spinning up more and more targeted services for their customers to get more valuable experience from a single provider, but it’s still rare that an organization can find a single cloud provider to manage every part of their data stack.</p>
+<p>While a single provider can provide robust in-cloud data environments, moving all of an organization’s data to a single cloud provider can create a dependency on that cloud. This is a dilemma for CIOs. The value of having a single cloud provider for an entire stack needs to be balanced against the threat of becoming beholden to that specific vendor. Forward-looking CIOs have to keep an eye on how agile their stack can be and construct their architecture in a way that makes it easily transferred from one cloud to another if that becomes necessary.</p>
+<h3 id="cloud-ready-vs-cloud-native">“Cloud-ready” vs. “cloud-native”</h3>
+<p>When discussing cloud technologies, it’s important to understand the difference between “cloud-ready” tools and “cloud-native” ones. Understanding those classifications is the only way to truly understand the relationships between tools in your stack and build something that takes advantage of all that multicloud has to offer. Here’s a short explanation: cloud-ready tools can run on the cloud in a limited capacity; cloud-native tools are intended to perform in a cloud environment in conjunction with other cloud-native technology. Cloud-ready technology might be able to emulate cloud-native tools, but the lack of nuanced scalability seen in cloud-native architectures prevents cloud-ready options from being genuinely considered equal.</p>
+<p>Cloud-native technology is set apart largely because of microservices architectures that are readily supported via Kubernetes, running on Linux (which has become the default operating system for the cloud). Applications built to run on a Kubernetes stack are portable — they will run on a single laptop or on a much more powerful AWS-backed collection of resources. Cloud-ready tools that were built to run on a laptop or an on-prem box might be able to run in the cloud on a single virtual machine, but that sacrifices all of the fine-grain scalability that makes multicloud valuable. </p>
+<p>Cloud-ready vendors offer limited functionality if you’re building a system that utilizes the full extent of multicloud technology. Consider a tool that was originally built for on-prem or outdated private clouds: That tool might be able to produce data that can be added to your cloud stack with read-only functionality, but if the rest of the pieces in your stack can all load data into the cloud, transform it there, and write back to other sources, your cloud-ready tool is already outdated and will only fall further behind as more cloud-native tools are added to that environment.</p>
+<p>Building a stack of all cloud-native tools is the easiest way to make sure your data infrastructure is up-to-date. Depending on your organization’s unique data inputs and outputs, it’s possible to have a fully functional stack that includes a single piece of cloud-ready technology, but as you try to fit more and more of those pieces together, the difficulties compound and the performance of your system suffers.</p>
+<h3 id="building-a-cloud-native-stack">Building a cloud-native stack</h3>
+<p>Ultimately, the choice about whether a tool is cloud-native or merely cloud-ready is one that is made by the vendor, not the customer. The decision to build a fully portable, cloud-native data infrastructure is one that an organization needs to make before it starts looking for tools to buy. To build the most modern cloud architecture, buyers need to make cloud-native structure a requirement for their vendor options.</p>
+<p>Building a stack with some cloud-ready vendors might seem like a viable option at first, but if the data team makes a decision to move their data from one cloud to another, that technology is going to prove problematic. For example, a tool like Tableau is built to run on-prem but can be cloud-ready in a multicloud stack. It might be functional to run in the cloud because of workarounds that you can build, but that limits how much a team can take advantage of the flexibility that comes with a true multicloud setup. </p>
+<h3 id="cloud-native-sisense">Cloud-Native Sisense</h3>
+<p>Sisense’s cloud-native solution is built to give data teams the most flexibility in their multicloud stack. That architecture is built for Linux and runs on Kubernetes and Docker, using container-based microservices to deliver its benefits. That Kubernetes architecture allows organizations to use resources efficiently, coordinating the scaling and management of microservice lifecycles effortlessly without the complex server management needs of a legacy approach. </p>
+<p>Since all of today’s major cloud offerings run on Linux and support Kubernetes technology, Sisense can be a part of the most modern portable multicloud stack. It’s fully self-contained in a portable environment that operates the same no matter where your team needs it to run. Cloud-Native Sisense runs smoothly on a single stack with any of the three major cloud providers or on a custom Sisense Managed Cloud stack that a data team has tailored to its specific needs.</p>
+<p>This incredibly agile tool fits seamlessly into any team’s Infrastructure-as-Code and DevOps processes, making it easier and faster to provision, upgrade, and scale nodes when needed. It also scales to suit the needs of any data team’s workflow, which allows companies to use their resources more efficiently and reduce the system’s TCO.</p>
+<p>However your organization approaches the multicloud landscape, Cloud-Native Sisense can help modernize your data stack. To see a demo or talk to one of our cloud experts, click the button below.</p>
+<p><a href="https://info.mondelio.com/cs/c/?cta_guid=5be07149-cdfa-490c-a5d8-09f75819ee73&signature=AAH58kEu97V0OiA_QV4Z9pWlgovshs9RtQ&pageId=30071178164&placement_guid=926700c5-cf7e-4b1a-a1e5-035b53911f69&click=b3abdf23-9fb8-496c-ad81-cc1283331b04&hsutk=0d41e1fbed96a7dc144db558978b597f&canon=https%3A%2F%2Finfo.mondelio.com%2Fdata-management-in-the-multicloud-analytics-era&utm_referrer=https%3A%2F%2Finfo.mondelio.com%2Fbusiness-intelligence-and-data-analytics&portal_id=5590659&redirect_url=APefjpFaI3sIf6VyhbDnhwJ3wXhfBDqemxCgttu9p_K9HoSv3Yi_S55xoEjX8T2FkyqrQZIZGAcjUfj3yulE1fsk-UmRDZKymKcsRBXwwnNeSr2BvGXejpm7EjG1Nd95jFsmqth3QW371sCAAlyK4prg471fkpNmmUS3M-nEjalhFpvXsXNttOnf-2v80MyWijGOt9MJTtN4jXwdgqulpzXNOurr76wf09cS_gh2AQFb8mtBxNkly16erkLRgz-20pibP3E35BQ-oyRwYVyjDGa-lS2FK_X2JlmaKXoxo7s62SrL-5V8XmWpCS_roOgWYLXu2qNhCvT7GHwLqMuTIx2pNl7qcAmzJsedFRHsbLlJ5FL99pebbm4-YvzkBNz3q06r-w4UTlYYTHIIGYyaUfu-K54Exx06UWjIK7l7wBZIHVxPKHNGXHc" target="_blank" class="button">Watch a Demo</a></p>
+</p>
+        <br /><br /><br />
+        <h2><a href="https://mondelio.com/business-intelligence-and-data-analytics/">Business Intelligence &amp; Data Analytics</a></h2>
+      </div>
+      <div class="col-md-4 mb-4">
+        <br />
+        <h2>About <b>Mondelio</b></h2>
+        <p>
+          Mondelio Worldwide is an Australian company having commenced operations in 1982. Mondelio's single focus is to
+          provide predictive data modelling and data analytics services to organisations throughout Australia and
+          overseas.
+        </p>
+        <h2>Our <b>Partners</b></h2>
+        <p>
+          Mondelio has partnered with <b>Stonebridge Consulting</b>, <b>Naveego</b> and <b>Sisense</b> expanding our
+          product offerings to the wider APAC market.
+        </p>
+
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form
+            action="https://mondelio.us1.list-manage.com/subscribe/post?u=13c1911f81df4693cee678f51&amp;id=1db0bc6f85"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <label for="mce-EMAIL"><h2>Subscribe <b>Here</b></h2></label>
+              <br />
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                required>
+                <br /><br />
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                  name="b_13c1911f81df4693cee678f51_1db0bc6f85" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                  class="button"></div>
+            </div>
+          </form>
+        </div>
+        <br /><br /><br /><br />
+        <!--End mc_embed_signup-->        
+
+        <h2><a href="https://mondelio.com/business-intelligence-and-data-analytics/">Business Intelligence &amp; Data Analytics</a></h2>
+        <!--<h2>Recent <b>Articles</b></h2>-->
+        
+        <h5><a href="https://mondelio.com/business-intelligence-and-data-analytics/data-management-in-the-multicloud-analytics-era/">Data Management in the MultiCloud Analytics Era</a></h5>
+        
+        <h5><a href="https://mondelio.com/business-intelligence-and-data-analytics/sisense-data-and-analytics-trends/">Sisense Data and Analytics Trends</a></h5>
+        
+        <h5><a href="https://mondelio.com/business-intelligence-and-data-analytics/analytics-and-high-performance-data-warehouses/">Analytics and High-Performance Data Warehouses</a></h5>
+        
+        <h5><a href="https://mondelio.com/business-intelligence-and-data-analytics/better-customer-health-through-data-analysis/">Better Customer Health Through Data Analysis</a></h5>
+        
+        <h5><a href="https://mondelio.com/business-intelligence-and-data-analytics/business-analysts-and-ai-answering-your-questions-before-asking/">Business Analysts and AI — Answering Your Analytics Questions Before Asking</a></h5>
+        
+        <h5><a href="https://mondelio.com/business-intelligence-and-data-analytics/how-can-business-analytics-benefit-your-organisation/">How can Business Analytics benefit your organisation?</a></h5>
+        
+      </div>
+    </div>
+</div>
+</section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer_other col-lg-3 col-md-6 col-sm-6">
+                    <h6>Products</h6>
+                    <ul>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;products#cpm-suite">Corporate Performance</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;products#data-accuracy">Data Accuracy & Integration</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;products#business-intelligence">BI and Data Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_other col-lg-2 col-md-6 col-sm-6">
+                    <h6>Services</h6>
+                    <ul>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;services#modeling">Data Integration</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;services#business-intelligence">Business Intelligence</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;services#consulting">Consulting</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;services#support">Support</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;services#training">Training</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_other col-lg-2 col-md-6 col-sm-6">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;business-intelligence-and-data-analytics">BI &
+                                Analytics</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;data-accuracy">Data Accuracy</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;case-studies">Case Studies</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;whitepapers">Whitepapers</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;webinars">Webinars</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_other col-lg-2 col-md-6 col-sm-6">
+                    <h6>About</h6>
+                    <ul>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;about">About Mondelio</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;partners">Our Partners</a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;mondelio.com&#x2F;news">News & Events</a>
+                        </li>
+                        <li>
+                            <a href="https://info.mondelio.com/book-a-demo">Book a Demo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_contact col-lg-3 col-md-6 col-sm-6">
+                    <h6>Contact</h6>
+                    <p>100 Walker Street<br />
+                        North Sydney, NSW 2060
+                    </p>
+                    <ul class="phone">
+                        <li>
+                            <a href="tel:+611300581260">1300 851 260 </a>
+                        </li>
+                        <li>
+                            <a href="tel:+61299294799">02 9929 4799 </a>
+                        </li>
+                    </ul>
+
+                    <a class="mail mt-0" href="mailto:info@mondelio.com">info@mondelio.com</a>
+
+                    <ul>
+                        <li>
+                            <a href="tel:+61299294799">
+                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@mondelio.com">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/mondelio-worldwide-pty-ltd/" target="_blank"
+                                rel="noopener">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/mondelio" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/MondelioAU" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2020 - Mondelio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <!-- <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+    </script> -->
+
+</body>
+
+</html>
